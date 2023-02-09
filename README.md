@@ -15,13 +15,15 @@ Vidéo (parti 3) [freeCodeCamp - JavaScript Programming (Full Course)](https://y
 ![Ouverture de l'extension](result/home.png)
 
 ### Saisi d'une URL à la main
-
+- Saisi de l'url dans l'input\
 ![Photo de l'input saisi](result/input_manually.png)
+- Résultat après avoir cliqué sur "SAVE INPUT"\
 ![Photo avec la valeur de l'input ajouter](result/save_input.png)
 
 ### Sauvegarder l'onglet ouvert
-
+- Aller sur l'onglet que vous souhaitez sauvegarder\
 ![Photo montrant l'onglet actuellement ouvert](result/tabs_open.png)
+- Résultat après avoir cliquer sur "SAVE TAB"\
 ![Photo montrant l'ajout de l'onglet dans la liste](result/tabs_saved.png)
 
 ### Supprimer toute la liste (en double cliquant sur "DELETE ALL")
