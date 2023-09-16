@@ -81,9 +81,24 @@ function render(leads) {
 
 function handleEditClick(event) {
     const index = event.target.getAttribute("data-index");
-    const newName = prompt("Nouveau nom :");
-    if (newName !== null) {
+    const currentName = myLeads[index]["name"];
+    const currentLink = myLeads[index]["link"];
+
+    const newName = prompt("Nouveau nom :", currentName);
+    const newLink = prompt("Nouveau lien (optionnel) :", currentLink);
+
+    if (newName !== null && newName !== currentName) {
         myLeads[index]["name"] = newName;
+    }
+
+    if (newLink !== null && newLink !== currentLink && newLink !== "") {
+        myLeads[index]["link"] = newLink;
+    }
+
+    if (
+        newName !== currentName ||
+        (newLink !== null && newLink !== currentLink && newLink !== "")
+    ) {
         localStorage.setItem("myLeads", JSON.stringify(myLeads));
         render(myLeads);
     }
